@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lotto Zahlen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+    <string name="beruehen_fuer_laden">Touch this text to start loading of the random numbers.</string>
+
+</resources>

@@ -340,6 +340,8 @@ public class MainActivity extends WearableActivity
             ZahlenPaar paar      = zahlenPaarArray[i];
             resultLottoZahlen[i] = paar.lottozahl;
         }
+        
+        Arrays.sort( resultLottoZahlen );
 
         return resultLottoZahlen;
     }

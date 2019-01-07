@@ -121,8 +121,8 @@ public class MainActivity extends WearableActivity
         @Override
         public Integer[] doInBackground(Void... voids) {
 
-            int[]     zufallsZahlenArray = null;
-            String    jsonAntwort        = null;
+            int[]  zufallsZahlenArray = null;
+            String jsonAntwort        = null;
 
             try {
                 jsonAntwort = rufeWebApi();
@@ -142,9 +142,9 @@ public class MainActivity extends WearableActivity
                 return new Integer[]{};
             }
 
-
             return lottoZahlenAuswaehlen( zufallsZahlenArray );
         }
+
 
         /**
          * Methode zur Darstellung des Ergebnisses.
@@ -162,13 +162,13 @@ public class MainActivity extends WearableActivity
 
                 StringBuffer sb = new StringBuffer("Lotto numbers:\n\n");
 
-                sb.append(lottoZahlenArray[0]).append(", ");
-                sb.append(lottoZahlenArray[1]).append(", ");
-                sb.append(lottoZahlenArray[2]).append("\n");
+                sb.append( lottoZahlenArray[0] ).append( ", " );
+                sb.append( lottoZahlenArray[1] ).append( ", " );
+                sb.append( lottoZahlenArray[2] ).append( "\n" );
 
-                sb.append(lottoZahlenArray[3]).append(", ");
-                sb.append(lottoZahlenArray[4]).append(", ");
-                sb.append(lottoZahlenArray[5]);
+                sb.append( lottoZahlenArray[3] ).append( ", " );
+                sb.append( lottoZahlenArray[4] ).append( ", " );
+                sb.append( lottoZahlenArray[5] );
 
                 _textView.setText( sb.toString() );
             }
@@ -201,7 +201,7 @@ public class MainActivity extends WearableActivity
         conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET"); // Eigentlich nicht nötig, weil "GET" Default-Wert ist.
 
-        if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
+        if ( conn.getResponseCode() != HttpURLConnection.HTTP_OK ) {
 
             String errorMessage = "HTTP error: " + conn.getResponseMessage();
             throw new Exception( errorMessage );
@@ -265,13 +265,13 @@ public class MainActivity extends WearableActivity
         return ergebnisArray;
     }
 
-    /* *************************************** */
-    /* ********* Start innere Klasse ********* */
-    /* *************************************** */
+    /* **************************************** */
+    /* ********* Start innere Klassen ********* */
+    /* **************************************** */
 
     /**
-     * Klasse um ein Paar aus einer Zufallszahl von der Web-API und einer Lotto-Zahl (1-49)
-     * zu speichern.
+     * Klasse um ein Zahlen Paar bestehend aus einer Zufallszahl von der Web-API und 
+     * einer Lotto-Zahl (1-49) zu repräsentieren.
      */
     protected class ZahlenPaar {
         int zufallszahl = -1;
@@ -304,9 +304,9 @@ public class MainActivity extends WearableActivity
         }
 
     };
-    /* *************************************** */
-    /* ********* Ende innere Klasse ********* */
-    /* *************************************** */
+    /* **************************************** */
+    /* ********* Ende innere Klassen ********* */
+    /* **************************************** */
 
 
     /**

@@ -56,7 +56,7 @@ public class MainActivity extends WearableActivity
 
 
     /**
-     * Lifecycle-Methode, lädt Layout-Datei
+     * Lifecycle-Methode, lädt Layout-Datei.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +69,7 @@ public class MainActivity extends WearableActivity
 
         setAmbientEnabled(); // Enables Always-on
     }
+
 
     /**
      * Event-Handler-Methode für das TextView-Element.
@@ -110,8 +111,8 @@ public class MainActivity extends WearableActivity
         /**
          * Diese Methode muss überschrieben werden, weil sie in der Oberklasse als
          * {@code abstract} deklariert ist (sonst erhält man keine instanzierbare Klasse).
-         *  Die Methode wird (wie der Name andeutet) in einem Hintergrund-Thread
-         *  (Worker-Thread) ausgeführt.
+         * Die Methode wird (wie der Name andeutet) in einem Hintergrund-Thread
+         * (Worker-Thread) ausgeführt.
          *
          * @param voids  Die Methode bekommt keine Parameter übergeben.
          *
@@ -177,6 +178,7 @@ public class MainActivity extends WearableActivity
         }
 
     };
+    
     /* *************************************** */
     /* ********* Ende innere Klasse  ********* */
     /* *************************************** */
@@ -269,6 +271,7 @@ public class MainActivity extends WearableActivity
     /* ********* Start innere Klassen ********* */
     /* **************************************** */
 
+
     /**
      * Klasse um ein Zahlen Paar bestehend aus einer Zufallszahl von der Web-API und 
      * einer Lotto-Zahl (1-49) zu repräsentieren.
@@ -314,7 +317,7 @@ public class MainActivity extends WearableActivity
      * Diese Methode wählt anhand der von der Web-API zurückgelieferten Zufallszahlen
      * die sechs auf dem Lotto-Schein anzukreuzenden Zahlen aus.
      *
-     * @param zufallsZahlenVonWebApi  Array mit den Zufallszahlen von der Web-API
+     * @param zufallsZahlenVonWebApi  Array mit den Zufallszahlen von der Web-API.
      *
      * @return  Die sechs Zufallszahle, die anzuzeigen sind.
      */

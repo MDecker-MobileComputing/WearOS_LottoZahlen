@@ -274,6 +274,7 @@ public class MainActivity extends WearableActivity
      * einer Lotto-Zahl (1-49) zu repräsentieren.
      */
     protected class ZahlenPaar {
+
         int zufallszahl = -1;
         int lottozahl   = -1;
     };

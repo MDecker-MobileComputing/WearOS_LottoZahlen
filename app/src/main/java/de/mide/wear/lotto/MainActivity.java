@@ -319,7 +319,7 @@ public class MainActivity extends WearableActivity
      *
      * @param zufallsZahlenVonWebApi  Array mit den Zufallszahlen von der Web-API.
      *
-     * @return  Die sechs Zufallszahle, die anzuzeigen sind.
+     * @return  Die sechs Zufallszahlen, die anzuzeigen sind.
      */
     protected Integer[] lottoZahlenAuswaehlen(int[] zufallsZahlenVonWebApi) {
 

@@ -6,6 +6,11 @@ The six numbers are based on real random data obtained from the
 
 <br>
 
+See [this repository](https://github.com/MDecker-MobileComputing/Ionic_Lottozahlen) for an Ionic app 
+that also generates random lottery numbers.
+
+<br>
+
 ----
 ## Screenshots
 
